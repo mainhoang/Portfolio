@@ -1,0 +1,119 @@
+@keyframes box {
+    0% {
+        width: 10px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes un-box {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 10px;
+    }
+}
+
+/*=====================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    background-color: #191d1f;
+}
+
+h4, h5 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: lighter;
+    color: #e6e6e6;
+}
+
+h5.nav-text {
+    color: #949494;
+    padding-top: 6px;
+}
+
+.verticle {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 40px;
+    width: 300px;
+    height: 100vh;
+    background-color: #0e0f0f;
+}
+
+.vert-ul {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+}
+
+.nav-text {
+    position: relative;
+    z-index: 2;
+}
+
+.color-box {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 100%;
+    background-color: #2f3c44;
+}
+
+.collapse-box {
+    animation: un-box 0.2s ease-out 0s 1 alternate forwards running;
+}
+
+.expand-box {
+    animation: box 0.2s ease-out 0s 1 alternate forwards running;
+}
+
+.box-1 .color-box {
+    background: #bc31d6;
+    background: -webkit-linear-gradient(left top, #bc31d6, #d66fc2);
+    background: -o-linear-gradient(bottom right, #bc31d6, #d66fc2);
+    background: -moz-linear-gradient(bottom right, #bc31d6, #d66fc2);
+    background: linear-gradient(to bottom right, #bc31d6, #d66fc2);
+}
+.box-2 .color-box {
+    background-color: #ca2b88;
+    background: -webkit-linear-gradient(left top, #c22da5, #e16589);
+    background: -o-linear-gradient(bottom right, #c22da5, #e16589);
+    background: -moz-linear-gradient(bottom right, #c22da5, #e16589);
+    background: linear-gradient(to bottom right, #c22da5, #e16589);
+}
+.box-3 .color-box {
+    background-color: #d3234a;
+    background: -webkit-linear-gradient(left bottom, #d81e33, #e36384);
+    background: -o-linear-gradient(top right, #d81e33, #e36384);
+    background: -moz-linear-gradient(top right, #d81e33, #e36384);
+    background: linear-gradient(to top right, #d81e33, #e36384);
+}
+.box-4 .color-box {
+    background-color: #db140f;
+    background: -webkit-linear-gradient(left bottom, #db1610, #e95e59);
+    background: -o-linear-gradient(top right, #db1610, #e95e59);
+    background: -moz-linear-gradient(top right, #db1610, #e95e59);
+    background: linear-gradient(to top right, #db1610, #e95e59);
+}
+
+.link-box {
+    position: relative;
+    z-index: 0;
+    height: 16.66%;
+    padding: 20px 36px;
+    border-bottom: 1px solid #191d1f;
+}
