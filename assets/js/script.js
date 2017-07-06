@@ -14,20 +14,31 @@ function toggleClass (element){
 	
 }
 
-new SiriWave({
+var wavesFore = new SiriWave({
   width: 2000,
   height: 100,
   speed: 0.01,
   container: document.getElementById('waves'),
   autostart: true,
+  color: '#eec9f2'
 });
 
-new SiriWave({
+var waveBg = new SiriWave({
   width: 1500,
-  height: 100,
+  height: 70,
   speed: 0.008,
   container: document.getElementById('waves-bg'),
   autostart: true,
-  
+  color: "#ba32dc"
+
+});
+
+var wavesBlue = new SiriWave({
+  width: 1500,
+  height: 85,
+  speed: 0.008,
+  container: document.getElementById('waves-blue'),
+  autostart: true,
+  color: "#55b6f7"
 
 });
