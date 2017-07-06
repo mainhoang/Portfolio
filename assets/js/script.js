@@ -13,3 +13,21 @@ function toggleClass (element){
 	thisBox.classList.toggle('expand-box');
 	
 }
+
+new SiriWave({
+  width: 2000,
+  height: 100,
+  speed: 0.01,
+  container: document.getElementById('waves'),
+  autostart: true,
+});
+
+new SiriWave({
+  width: 1500,
+  height: 100,
+  speed: 0.008,
+  container: document.getElementById('waves-bg'),
+  autostart: true,
+  
+
+});
