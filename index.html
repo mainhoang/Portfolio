@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Montserrat:300,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -14,26 +15,26 @@
     </nav> 
     <nav class="verticle-nav">
         <ul class="vert-ul">
-            <li class="link-box">
+            <li class="link-box" onclick="goHome()">
                 <div class="color-box"></div>
-                <h4 class="nav-text">Mai Hoang</h4>
-                <h5 class="nav-text">Web Developer</h5>
+                <h5 class="nav-text">Mai Hoang</h5>
+                <h5 class="nav-text sub-title">Web Developer</h5>
             </li>
             <li class="link-box box-1" onclick="toggleClass(this)">
-                <div class="color-box"></div>
-                <h4 class="nav-text">About</h4>
+                <div class="color-box animated-boxes" data-section="about"></div>
+                <h5 class="nav-text">About</h5>
             </li>
             <li class="link-box box-2" onclick="toggleClass(this)">
-                <div class="color-box"></div>
-                <h4 class="nav-text">Work</h4>
+                <div class="color-box animated-boxes" data-section="work"></div>
+                <h5 class="nav-text">Work</h5>
             </li>
             <li class="link-box box-3" onclick="toggleClass(this)">
-                <div class="color-box"></div>
-                <h4 class="nav-text">Tidbits</h4>
+                <div class="color-box animated-boxes" data-section="tidbits"></div>
+                <h5 class="nav-text">Tidbits</h5>
             </li>
             <li class="link-box box-4" onclick="toggleClass(this)">
-                <div class="color-box"></div>
-                <h4 class="nav-text">Contact</h4>
+                <div class="color-box animated-boxes" data-section="contact"></div>
+                <h5 class="nav-text">Contact</h5>
             </li>
             <li class="link-box">
                 <div class="color-box"></div>
@@ -42,19 +43,65 @@
     </nav>
     <main id="container">
 
-        <div id="hero-div">
+        <section id="hero">
             <div id="waves-bg"></div>
             <img src="assets/imgs/duck.svg" id="my-ducky">
             <div id="waves-blue"></div>
             <div id="waves"></div>
-        </div>
-        
-        
+        </section>
 
-        <div class="push"></div>
+        <section id="about">
+            <div class="about-wrapper">
+                <div class="img-wrapper">
+                    <div class="me"></div>
+                </div>
+                <div class="text-wrapper">
+                    <h4>For Design</h4>
+                    <p>I am a designer with passion for creating pixel-perfect, intuitive user experiences.</p>
+                    <h4>For Development</h4>
+                    <p>I am a full stack developer, specializing in the front end with focus  on writing clean, efficient, and expressive code.</p>
+                    <h4>For Fun</h4>
+                    <p>I am a creative, logical thinker & dreamer. I grew up in Houston, Tx and am, currently, based in Los Angeles. When I am not writing code or designing, I enjoy gardening, music, and aquascaping.<br /> Oh... And I have 2 dog-babies.</p>
+                </div> 
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="work-wrapper">
+                
+            </div>
+        </section>
+
+
+        <section id="tidbits">
+            <div class="tidbits-wrapper">
+                <h1>coming soon</h1> 
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-wrapper">
+                <h1>contact me</h1>
+                <form>
+                    <label>Name</label>
+                    <input type="" name="" />
+                    <label>Email</label>
+                    <input type="" name="" />
+                    <label>Message</label>
+                    <textarea type="" name=""></textarea>
+                    <button>Send</button>
+                </form>
+                <div class="social">
+                    <div><a href="https://github.com/mainhoang">GitHub</a></div>
+                    <div><a href="https://www.linkedin.com/in/mai-hoang-01b150133/">LinkedIn</a></div>   
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="push"></div> -->
 
     </main>
-    <footer></footer>
+    <!-- <footer></footer> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="assets/js/wave.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
